@@ -1,0 +1,45 @@
+const listaContactos = [
+        {id: 'a', 
+          nombre: "Alejandro", 
+          apellido: "Osorio", 
+          telefono: "65789435",
+          ubicacion: { 
+            ciudad: "Tegucigalpa", 
+            dirección: "Carrizal" },
+          },
+        { id: 'b', 
+          nombre: "Eduardo", 
+          apellido: "Caceres", 
+          telefono: "99676543",
+          ubicacion: { 
+            ciudad: "San Pedro Sula", 
+            dirección: " Chamelecon" },
+          },
+        {id: 'c', 
+          nombre: "Maria", 
+          apellido: "Gonzalez", 
+          telefono: "97930485",
+          ubicacion: { 
+            ciudad: "Comayagua", 
+            dirección: "colonia Las 3 Rosas" },}
+      ]
+      console.log(listaContactos);
+      console.log('______________');
+
+      //añadir un nuevo contacto a la lista
+      const contacto = new Object(listaContactos);
+         contacto.id = 'd';
+         contacto.nombre = 'Saul';
+         contacto.apellido = 'Sanchez';
+         contacto.telefono = '98346527';
+         contacto.ubicacion ={
+             ciudad: 'Tegucigalpa', dirección: 'Hacienda Real'}
+         console.log(contacto);
+         console.log('______________');
+
+     //eliminar un nuevo contacto por ID
+       
+    const borrarContacto = delete Object({id: 'b'})
+    console.log(borrarContacto);
+    console.log('____________');
+    console.log(listaContactos.length);
